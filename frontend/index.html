@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Clientes</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Clientes</h1>
+        
+        <div class="client-list">
+            <h2>Lista de Clientes</h2>
+            <table id="client-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Ciudad</th>
+                        <th>Teléfono</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+        
+        <p id="responseMessage"></p>
+
+        <!-- FORMULARIO DE CREACIÓN -->
+        <form id="add-client-form">
+            <h2>Agregar Cliente</h2>
+            <label for="name">Nombre:</label>
+            <input name="name" type="text" id="name" required><br>
+            
+            <label for="email">Email:</label>
+            <input name="email" type="email" id="email" required><br>
+            
+            <label for="city">Ciudad:</label>
+            <input name="city" type="text" id="city" required><br>
+            
+            <label for="telephone">Teléfono:</label>
+            <input name="telephone" type="text" id="telephone" required><br>
+            
+            <button type="submit">Agregar Cliente</button>
+        </form>
+
+        <!-- FORMULARIO DE EDICIÓN -->
+        <form id="edit-client-form" style="display: none;">
+            <h2>Editar Cliente</h2>
+
+            <input type="hidden" id="edit-id">
+            <label for="edit-name">Nombre:</label>
+            <input type="text" id="edit-name" required><br>
+            
+            <label for="edit-email">Email:</label>
+            <input type="email" id="edit-email" required><br>
+            
+            <label for="edit-city">Ciudad:</label>
+            <input type="text" id="edit-city" required><br>
+            
+            <label for="edit-telephone">Teléfono:</label>
+            <input type="text" id="edit-telephone" required><br>
+            
+            <button type="submit">Actualizar Cliente</button>
+        </form>
+        
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
